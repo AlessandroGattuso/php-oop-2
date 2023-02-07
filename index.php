@@ -32,7 +32,22 @@
                       echo $icon;
               ?>
             </div>
-            <p class="card-text"><?php echo $product->price ?>€</p>
+            <p class="card-text mb-0"><?php echo $product->price ?>€</p>
+            <p class="card-text">
+              <?php 
+                switch(get_class($product)){
+                  case 'Food':
+                    echo "Ingredienti: ".implode(', ', $product->ingredients);
+                    break;
+                  case 'Toy':
+                    echo "Materiali: ".implode(', ', $product->materials);
+                    break;
+                  case 'Cage':
+                    echo "Dimensioni: ".$product->dimensions;
+                    break;
+                }
+              ?>
+            </p>
             <div class="d-flex justify-content-center">
               <a href="#" class="btn btn-success">Purchase</a>
             </div>

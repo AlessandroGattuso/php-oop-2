@@ -4,7 +4,7 @@
 
     public $price, $category;
 
-    function __construct(Category $_category, $_price){
+    function __construct($_category, $_price){
       $this->category = $_category;
       $this->price = $_price;
     }
