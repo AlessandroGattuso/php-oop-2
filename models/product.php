@@ -2,16 +2,10 @@
 
   class Product{
 
-    public $type, $price;
-    public static $animalsIcon = [
-      'bird' => '<i class="fa-solid fa-dove"></i>',
-      'cat' => '<i class="fa-solid fa-cat"></i>',
-      'dog' => '<i class="fa-solid fa-dog"></i>',
-      'fish' => '<i class="fa-solid fa-fish"></i>'
-    ];
+    public $price, $category;
 
-    function __construct($_type, $_price){
-      $this->type = $_type;
+    function __construct(Category $_category, $_price){
+      $this->category = $_category;
       $this->price = $_price;
     }
   }

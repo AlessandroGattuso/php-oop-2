@@ -27,8 +27,8 @@
             <div class="d-flex gap-2 text-success-emphasis">
               <?php echo $product->getIcon(); ?>
               <?php 
-                foreach(Product::$animalsIcon as $animal => $icon)
-                  if($animal === $product->type)
+                foreach(Category::$animalsIcon as $animal => $icon)
+                  if($animal === $product->category->type)
                       echo $icon;
               ?>
             </div>
