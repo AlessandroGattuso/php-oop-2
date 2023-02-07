@@ -1,12 +1,11 @@
 <?php
   
  class Toy extends Product{
-   public $name, $materials;
+   public $materials;
    public static $icon = '<i class="fa-solid fa-futbol"></i>';
   
-   public function __construct($name, $category, $price, ...$_materials){
-       parent::__construct($category, $price);
-       $this->name = $name;
+   public function __construct($name, $category, $price, $image, ...$_materials){
+       parent::__construct($category, $price, $image, $name);
        $this->materials = $_materials;
    }
 

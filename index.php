@@ -21,7 +21,7 @@
   <div class="container d-flex flex-wrap justify-content-around mt-5 gap-5 pb-5">
     <?php foreach($products as $product){ ?>
         <div class="card px-0 pb-0" style="width: 18rem;">
-          <img src="https://picsum.photos/300/200" class="card-img-top" alt="img not found">
+          <img src="<?php echo $product->image; ?>" class="card-img-top" alt="img not found">
           <div class="card-body d-flex flex-column gap-3">
             <h5 class="card-title"><?php echo $product->name ?></h5>
             <div class="d-flex gap-2 text-success-emphasis">
