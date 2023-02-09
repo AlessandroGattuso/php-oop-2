@@ -1,9 +1,9 @@
 <?php
-  include __DIR__.'../../models/category.php';
-  include __DIR__.'../../models/product.php';
-  include __DIR__.'../../models/product_types/food.php';
-  include __DIR__.'../../models/product_types/cage.php';
-  include __DIR__.'../../models/product_types/Toy.php';
+  include_once __DIR__.'/../models/Category.php';
+  include_once __DIR__.'/../models/Product.php';
+  include_once __DIR__.'/../models/product_types/Food.php';
+  include_once __DIR__.'/../models/product_types/Cage.php';
+  include_once __DIR__.'/../models/product_types/Toy.php';
   
   $image = 'https://picsum.photos/300/200';
 
